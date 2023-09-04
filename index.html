@@ -1,0 +1,713 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding With Caleb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/Me.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Caleb Bolivar.</span>
+                    A Web Developer.
+                </h1>
+                <p>
+                  I am mainly a Web Developer, I love to create beautiful and functional websites. But I also do a lot more things with technology.
+              </p>
+            </div>
+        </div>
+     <!- <div class="wwd">
+      <div class="main-title title">
+                <h2>What We <span>Do</span><span class="bg-text">What i do</span></h2>
+            </div>
+        <br>
+        <br>
+        <div class="contanir">
+          
+          <div class="item1">
+      <img class="html-img" src="img/html-5.jpg" alt="" width="200px" height="200px">
+        <h1 class="html-txt">HTML</h1>
+        </div>
+          <div class="item2">
+        <img class="css-img" src="img/css.jpg" alt="" width="200px" height="200px">
+        <h1 class="css-txt">Css</h1>
+          </div>
+          
+          <div class="item3">
+        <img class="js-img" src="img/javascript.jpg" alt="" width="200px" height="200px">
+        <h1 class="js-txt">Javhascript</h1>
+          </div>
+          <div class="item4">
+        <img class="gd-img" src="img/graphic-design.jpg" alt="" width="200px" height="200px">
+        <h1 class="gd-txt">Web Design</h1>
+          </div>
+          <div class="item5">
+      <img src="img/logo.jpg" alt="" class="logo-img" width="200px" height="200px">
+        <h1 class="logo-txt">Logo Making</h1> 
+          </div>
+          <div class="item6">
+        <img src="img/ui-design.jpg" alt="" class="ui-img" width="200px" height="200px">
+        <h1 class="ui-txt">App Design</h1>
+          </div>
+          <div class="item7">
+          <img src="img/email.jpg" alt="" class="email-img" width="200px" height="200px">
+        <h1 class="email-txt">Email Template's</h1>
+          </div>
+      
+       </div>
+        </div>
+    </header>
+  <main>
+        <section class="container about" id="about" style="padding: 0;">
+            <div class="main-title">
+<div class="main-title title">
+                <h2>About <span>Me</span><span class="bg-text">About us</span></h2>
+            </div>
+             
+        <div class="about-contanir">
+          <div class="about-img">
+      <img src="img/Logo.jpg" alt="" width="100%">
+          </div>
+<div class="about-text"><p>Here at Coding with Caleb we are dedicated to making outstanding Websites, Web design's, Logos, App desin's, Email templates, and to help with your technology problems. Here we specialize in making Websites, but we also enjoy designing Websites, Apps, logos, and Emails. The way we Make websites is with HTML CSS and JavaScript not with Wix or any drag and drop website Builder. We like to do our own coding which lets us do Custom designs. The way we design Websites and Apps is with The awesome software Figma. We also design logos from hand drawings. We create Awesome Emails with gmail.
+</p></div>
+              </div>
+       
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+    <div class="content">        
+        <h2>Coming Soon</h2>
+        <div class="timing">00 : 00 : 00 : 00</div>
+        <p>A super awesome testimonials page is coming soon</p>
+    </div>
+
+    <script>
+        let customeDate = new Date("September 20, 2023 12:00:00").getTime();
+        let timer = setInterval(timing, 1000);
+        function timing(){
+            let now = new Date().getTime();
+            let x = customeDate - now;
+            if(x > 0){
+                
+                let days = Math.floor(x / (1000*60*60*24));
+                
+                let hours = Math.floor((x % (1000*60*60*24)) / (1000*60*60));
+                
+                let mins = Math.floor((x % (1000*60*60)) / (1000*60));
+                
+                let secs = Math.floor((x % (1000*60)) / 1000);
+                
+                let time = `${days}d : ${hours}h : ${mins}m : ${secs}s`;
+                document.querySelector('.timing').innerHTML = time;
+            }
+        }
+    </script>
+              <!--
+    <div class="reviews-page">
+      <div id="testimonials">
+        <!--heading->
+                <h4 class="stat-title">Client Says</h4>
+        <!--testimonials-box-container->
+        <div class="testimonial-box-container">
+            <!--BOX-1-------------->
+              <!-- <div class="testimonial-box">
+                <!--top------------------------->
+
+              <!--                <div class="box-top">
+                    <!--profile----->
+                  
+              <!--  <div class="profile">
+                        <!--img---->
+                  
+              <!--      <div class="profile-img">
+                            <img src="img/No-img.jpg">
+                        </div>
+                        <!--name-and-username-->
+                  
+              <!--      <div class="name-user">
+                            <strong>Touseeq Ijaz</strong>
+                            <span>@touseeqijazweb</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                  
+              <!--  <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                  
+              <!--  </div>
+                </div>
+                <!--Comments---------------------------------------->
+             
+              <!--   <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-2-------------->
+           
+              <!-- <div class="testimonial-box">
+                <!--top------------------------->
+               
+              <!-- <div class="box-top">
+                    <!--profile----->
+                  
+              <!--  <div class="profile">
+                        <!--img---->
+                  
+              <!--      <div class="profile-img">
+                            <img src="img/No-img.jpg">
+                        </div>
+                        <!--name-and-username-->
+                  
+              <!--      <div class="name-user">
+                            <strong>J.K Rowling</strong>
+                            <span>@jkrowling</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                  
+              <!--  <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Empty star-->
+                  
+              <!--  </div>
+                </div>
+                <!--Comments---------------------------------------->
+              
+              <!--  <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-3-------------->
+        
+              <!--    <div class="testimonial-box">
+                <!--top------------------------->
+              
+              <!--  <div class="box-top">
+                    <!--profile----->
+                  
+              <!--  <div class="profile">
+                        <!--img---->
+                  
+              <!--      <div class="profile-img">
+                            <img src="img/No-img.jpg">
+                        </div>
+                        <!--name-and-username-->
+                  
+              <!--      <div class="name-user">
+                            <strong>Harry Potter</strong>
+                            <span>@DanielRedclief</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                  
+              <!--  <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                  
+              <!--  </div>
+                </div>
+                <!--Comments---------------------------------------->
+            
+              <!--    <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+            <!--BOX-4-------------->
+          
+              <!--  <div class="testimonial-box">
+                <!--top------------------------->
+                
+              <!--<div class="box-top">
+                    <!--profile----->
+                  
+              <!--  <div class="profile">
+                        <!--img---->
+                  
+              <!--      <div class="profile-img">
+                            <img src="img/No-img.jpg">
+                        </div>
+                        <!--name-and-username-->
+                  
+              <!--      <div class="name-user">
+                            <strong>Oliva</strong>
+                            <span>@Olivaadward</span>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                  
+              <!--  <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                  
+              <!--  </div>
+                </div>
+                <!--Comments---------------------------------------->
+               
+              <!-- <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+              -->
+              <div class="my-skils">
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                  <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">HTML</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Css</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="progress-bar">
+                        <p class="prog-title">Web Design</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="webd"></span>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+    </div>
+              </div>
+          </div>
+    </section>
+              <section class="container" id="portfolio"> 
+    <div class="content2">        
+        <h2>Coming Soon</h2>
+        <p>Are you ready because this is going to be a place where you can see the finished work i did for previous clients
+</p>
+    </div>
+    </section>
+        
+ <!--          <section class="container" id="portfolio"> 
+ 
+           <div class="main-title">
+<h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port4.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port7.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 </section>
+      -->
+        <section class="container" id="blogs">
+             
+          <div class="main-title">
+                    <h2>Our <span>Services</span><span class="bg-text">Services</span></h2>
+                </div>
+           <p class="port-text">
+                Here Is Some Services I Offer
+            </p>
+           
+          <div class="services">
+
+            <div class="block glow">            </div>
+           <div class="services-container">
+  <div class="services-box" style="--clr: #89ec5b;">
+   <div class="services-content">
+    <div class="services-icon"><i class="far fa-code"></i>      
+      </div>
+    <div class="services-text">
+      <h3>Web Developmet</h3>
+      <p>We will Code you a Website that will make you look professional</p>
+      <a href="services/Web-Development/Web-dev.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>
+            
+ 
+           <div class="services-container">
+  <div class="services-box" style="--clr: #eb5ae5;">
+   <div class="services-content">
+    <div class="services-icon"><i class="far fa-paint-brush"></i>      
+      </div>
+    <div class="services-text">
+      <h3>Web Design</h3>
+      <p>We will Design you a vary cool and Awesome looking Website</p>
+      <a href="services/Web-Design/Web-des.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>
+            <div class="services-container">
+  <div class="services-box" style="--clr: #5b98eb;">
+   <div class="services-content">
+    <div class="services-icon"><i class="far fa-brush"></i>      
+      </div>
+    <div class="services-text">
+      <h3>App Desing</h3>
+      <p>We will Design you a very cool and Awesome looking App Design
+</p>
+      <a href="services/App-Design/App-des.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>
+          </div>
+            <div class="services">
+            <div class="services-container">
+  <div class="services-box" style="--clr: #27AE60;">
+   <div class="services-content">
+    <div class="services-icon"><i class="far fa-envelope"></i>      
+      </div>
+    <div class="services-text">
+      <h3>Email template</h3>
+      <p>We will Design you a Awesome looking Email that will look out of this world</p>
+      <a href="services/Email-template/Email-tem.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>
+              <div class="services-container">
+  <div class="services-box" style="--clr: #0ab8f7;">
+   <div class="services-content">
+    <div class="services-icon"><img src="img/logo2.jpg" alt="" width="50px" height="50px">      
+      </div>
+    <div class="services-text">
+      <h3>Logo Making</h3>
+      <p>We will Design you a Awesome looking logo that will look out of this world</p>
+      <a href="services/Logo-making/Logo-mak.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>
+          
+       
+              <div class="services-container">
+  <div class="services-box" style="--clr: #dbe1e8;">
+   <div class="services-content">
+     <div class="services-icon"><i class="far fa-paint-brush"></i>     
+      </div>
+    <div class="services-text">
+      <h3>Technology help</h3>
+      <p>We will do our best to help you with your technology needs
+</p>
+      <a href="services/Tec-help/Tec-help.html">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  </div>  
+          </div>
+  
+           
+           
+           
+           
+           
+        
+    </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p> 
+                Have any questions or concerns feel free to contact me here 
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Orlando Flordia
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: codingwithcaleb@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 630-577-7178</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: English, Spanish</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                      <form target="_blank" action="https://formsubmit.co/jbolivar1809@gmail.com" method="POST" class="contact-form">
+  <input type="hidden" tv6 name="_next" value="https://codingwithcaleb.github.io/My-Website//thankyou.html">
+  <input type="hidden" name="_subject" value="New submission from the website">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+      <div class="input-control i-c-2">
+        <div class="form-col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        
+      <div class="input-control i-c-2">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      
+      </div>
+    </div>
+    <div class="input-control">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Contact Us</button>
+  </form>
+                    </div>
+                </div>
+            </div>
+  </section>
+  </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+              
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div> 
+        <div class="control" data-id="blogs">
+            <i class="far fa-code"></i>      
+      </div> 
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
